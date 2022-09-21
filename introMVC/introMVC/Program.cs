@@ -1,7 +1,9 @@
-var builder = WebApplication.CreateBuilder(args);
+﻿var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+// Uygulama boyunca ihtiyaç duyacağınız instance'ları burada sisteme ekler.
 builder.Services.AddControllersWithViews();
+
 
 var app = builder.Build();
 
