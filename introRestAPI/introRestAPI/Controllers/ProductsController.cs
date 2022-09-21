@@ -1,4 +1,5 @@
 ﻿using introRestAPI.Models;
+using introRestAPI.Services;
 using Microsoft.AspNetCore.Mvc;
 
 namespace introRestAPI.Controllers
@@ -7,17 +8,17 @@ namespace introRestAPI.Controllers
     [ApiController]
     public class ProductsController : ControllerBase
     {
+        IProductService productService;
+        public ProductsController(IProductService productService)
+        {
+            this.productService = productService;
+        }
+
         [HttpGet]
         public IActionResult GetProducts()
         {
-            var products = new List<Product>
-            {
-                new Product{ Id=1, Name="ABC", Description="Açıklama...", Price=1},
-                new Product{ Id=2, Name="DEF", Description="Açıklama...", Price=5},
-                new Product{ Id=3, Name="KLM", Description="Açıklama...", Price=10}
-
-            };
-
+            //  ProductService productService = new ProductService();
+            var products = productService.GetProducts();
             return Ok(products);
 
         }

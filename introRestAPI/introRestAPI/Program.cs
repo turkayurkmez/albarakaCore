@@ -1,11 +1,22 @@
+using introRestAPI.Services;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-
+var isDummyProductService = builder.Configuration.GetValue<bool>("IsDummyProductService");
+if (isDummyProductService)
+{
+    builder.Services.AddScoped<IProductService, ProductService>();
+}
+else
+{
+    builder.Services.AddScoped<IProductService, CustomProductService>();
+}
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+
 
 var app = builder.Build();
 
