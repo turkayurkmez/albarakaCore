@@ -1,4 +1,5 @@
 ﻿
+using catalog.Business.DTOs.Requests;
 using catalog.Business.Services;
 using Microsoft.AspNetCore.Mvc;
 
@@ -28,6 +29,28 @@ namespace catalog.API.Controllers
             //business'dan bana gereken nesneyi kullanarak ürünleri getir ve döndürür.
             var products = await productService.GetProducts();
             return Ok(products);
+        }
+        [HttpGet("{id}")]
+        public async Task<IActionResult> GetProductById(int id)
+        {
+            var product = await productService.GetProduct(id);
+            if (product != null)
+            {
+                return Ok(product);
+            }
+            return NotFound(new { message = "Belirtilen id'de bir ürün bulunamadı" });
+
+        }
+        [HttpPost]
+        public async Task<IActionResult> Add(CreateProductRequest createProduct)
+        {
+            if (ModelState.IsValid)
+            {
+                var id = await productService.AddProduct(createProduct);
+                return CreatedAtAction(nameof(GetProductById), new { id = id }, null);
+
+            }
+            return BadRequest(ModelState);
         }
     }
 }

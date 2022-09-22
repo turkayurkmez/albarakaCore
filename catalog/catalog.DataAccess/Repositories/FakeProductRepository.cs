@@ -31,12 +31,12 @@ namespace catalog.DataAccess.Repositories
             throw new NotImplementedException();
         }
 
-        public IEnumerable<Product> GetProductsByCategoryId(int categoryId)
+        public Task<IEnumerable<Product>> GetProductsByCategoryId(int categoryId)
         {
             throw new NotImplementedException();
         }
 
-        public IEnumerable<Product> SearchProductsByName(string name)
+        public Task<IEnumerable<Product>> SearchProductsByName(string name)
         {
             throw new NotImplementedException();
         }

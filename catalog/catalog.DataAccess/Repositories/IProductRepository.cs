@@ -4,8 +4,8 @@ namespace catalog.DataAccess.Repositories
 {
     public interface IProductRepository : IRepository<Product>
     {
-        IEnumerable<Product> SearchProductsByName(string name);
-        IEnumerable<Product> GetProductsByCategoryId(int categoryId);
+        Task<IEnumerable<Product>> SearchProductsByName(string name);
+        Task<IEnumerable<Product>> GetProductsByCategoryId(int categoryId);
 
     }
 }

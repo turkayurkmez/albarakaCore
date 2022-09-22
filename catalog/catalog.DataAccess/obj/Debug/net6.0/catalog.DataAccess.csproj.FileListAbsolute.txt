@@ -13,3 +13,5 @@ C:\Users\turka\source\repos\Kurumsal\AlbarakaTurk\NetCore\catalog\catalog.DataAc
 C:\Users\turka\source\repos\Kurumsal\AlbarakaTurk\NetCore\catalog\catalog.DataAccess\obj\Debug\net6.0\refint\catalog.DataAccess.dll
 C:\Users\turka\source\repos\Kurumsal\AlbarakaTurk\NetCore\catalog\catalog.DataAccess\obj\Debug\net6.0\catalog.DataAccess.pdb
 C:\Users\turka\source\repos\Kurumsal\AlbarakaTurk\NetCore\catalog\catalog.DataAccess\obj\Debug\net6.0\ref\catalog.DataAccess.dll
+C:\Users\turka\source\repos\Kurumsal\AlbarakaTurk\NetCore\catalog\catalog.DataAccess\bin\Debug\net6.0\catalog.DataAccess.runtimeconfig.json
+C:\Users\turka\source\repos\Kurumsal\AlbarakaTurk\NetCore\catalog\catalog.DataAccess\obj\Debug\net6.0\catalog.DataAccess.genruntimeconfig.cache

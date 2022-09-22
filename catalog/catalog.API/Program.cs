@@ -1,5 +1,7 @@
 using catalog.Business.Services;
+using catalog.DataAccess.Data;
 using catalog.DataAccess.Repositories;
+using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -10,7 +12,12 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddScoped<IProductService, ProductService>();
-builder.Services.AddScoped<IProductRepository, FakeProductRepository>();
+builder.Services.AddScoped<IProductRepository, EFProductRepository>();
+
+var connectionString = builder.Configuration.GetConnectionString("db");
+builder.Services.AddDbContext<CatalogDbContext>(opt => opt.UseSqlServer(connectionString));
+
+
 
 var app = builder.Build();
 
