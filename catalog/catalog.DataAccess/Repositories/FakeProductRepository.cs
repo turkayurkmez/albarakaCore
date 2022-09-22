@@ -16,7 +16,14 @@ namespace catalog.DataAccess.Repositories
 
         public Task<IEnumerable<Product>> GetAll()
         {
-            throw new NotImplementedException();
+            var products = new List<Product>()
+            {
+                new Product{ Id=1, Name="X", Price=5, Rating=4.2},
+                new Product{ Id=2, Name="Y", Price=5, Rating=4.2},
+                new Product{ Id=3, Name="Z", Price=5, Rating=4.2},
+
+            };
+            return Task.FromResult(products.AsEnumerable());
         }
 
         public Task<Product> GetById(int id)

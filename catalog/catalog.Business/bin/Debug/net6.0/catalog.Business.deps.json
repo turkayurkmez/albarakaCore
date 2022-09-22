@@ -1,0 +1,49 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "catalog.Business/1.0.0": {
+        "dependencies": {
+          "catalog.DataAccess": "1.0.0"
+        },
+        "runtime": {
+          "catalog.Business.dll": {}
+        }
+      },
+      "catalog.DataAccess/1.0.0": {
+        "dependencies": {
+          "catalog.Entities": "1.0.0"
+        },
+        "runtime": {
+          "catalog.DataAccess.dll": {}
+        }
+      },
+      "catalog.Entities/1.0.0": {
+        "runtime": {
+          "catalog.Entities.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "catalog.Business/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "catalog.DataAccess/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "catalog.Entities/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

@@ -1,0 +1,12 @@
+C:\Users\turka\source\repos\Kurumsal\AlbarakaTurk\NetCore\catalog\catalog.Entities\bin\Debug\net6.0\catalog.Entities.deps.json
+C:\Users\turka\source\repos\Kurumsal\AlbarakaTurk\NetCore\catalog\catalog.Entities\bin\Debug\net6.0\catalog.Entities.dll
+C:\Users\turka\source\repos\Kurumsal\AlbarakaTurk\NetCore\catalog\catalog.Entities\bin\Debug\net6.0\catalog.Entities.pdb
+C:\Users\turka\source\repos\Kurumsal\AlbarakaTurk\NetCore\catalog\catalog.Entities\obj\Debug\net6.0\catalog.Entities.csproj.AssemblyReference.cache
+C:\Users\turka\source\repos\Kurumsal\AlbarakaTurk\NetCore\catalog\catalog.Entities\obj\Debug\net6.0\catalog.Entities.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\turka\source\repos\Kurumsal\AlbarakaTurk\NetCore\catalog\catalog.Entities\obj\Debug\net6.0\catalog.Entities.AssemblyInfoInputs.cache
+C:\Users\turka\source\repos\Kurumsal\AlbarakaTurk\NetCore\catalog\catalog.Entities\obj\Debug\net6.0\catalog.Entities.AssemblyInfo.cs
+C:\Users\turka\source\repos\Kurumsal\AlbarakaTurk\NetCore\catalog\catalog.Entities\obj\Debug\net6.0\catalog.Entities.csproj.CoreCompileInputs.cache
+C:\Users\turka\source\repos\Kurumsal\AlbarakaTurk\NetCore\catalog\catalog.Entities\obj\Debug\net6.0\catalog.Entities.dll
+C:\Users\turka\source\repos\Kurumsal\AlbarakaTurk\NetCore\catalog\catalog.Entities\obj\Debug\net6.0\refint\catalog.Entities.dll
+C:\Users\turka\source\repos\Kurumsal\AlbarakaTurk\NetCore\catalog\catalog.Entities\obj\Debug\net6.0\catalog.Entities.pdb
+C:\Users\turka\source\repos\Kurumsal\AlbarakaTurk\NetCore\catalog\catalog.Entities\obj\Debug\net6.0\ref\catalog.Entities.dll

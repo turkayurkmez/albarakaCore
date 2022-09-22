@@ -26,7 +26,7 @@ namespace catalog.API.Controllers
         public async Task<IActionResult> GetAllProducts()
         {
             //business'dan bana gereken nesneyi kullanarak ürünleri getir ve döndürür.
-            var products = productService.GetProducts();
+            var products = await productService.GetProducts();
             return Ok(products);
         }
     }

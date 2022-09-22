@@ -1,0 +1,17 @@
+C:\Users\turka\source\repos\Kurumsal\AlbarakaTurk\NetCore\catalog\catalog.Business\bin\Debug\net6.0\catalog.Business.deps.json
+C:\Users\turka\source\repos\Kurumsal\AlbarakaTurk\NetCore\catalog\catalog.Business\bin\Debug\net6.0\catalog.Business.dll
+C:\Users\turka\source\repos\Kurumsal\AlbarakaTurk\NetCore\catalog\catalog.Business\bin\Debug\net6.0\catalog.Business.pdb
+C:\Users\turka\source\repos\Kurumsal\AlbarakaTurk\NetCore\catalog\catalog.Business\bin\Debug\net6.0\catalog.DataAccess.dll
+C:\Users\turka\source\repos\Kurumsal\AlbarakaTurk\NetCore\catalog\catalog.Business\bin\Debug\net6.0\catalog.Entities.dll
+C:\Users\turka\source\repos\Kurumsal\AlbarakaTurk\NetCore\catalog\catalog.Business\bin\Debug\net6.0\catalog.DataAccess.pdb
+C:\Users\turka\source\repos\Kurumsal\AlbarakaTurk\NetCore\catalog\catalog.Business\bin\Debug\net6.0\catalog.Entities.pdb
+C:\Users\turka\source\repos\Kurumsal\AlbarakaTurk\NetCore\catalog\catalog.Business\obj\Debug\net6.0\catalog.Business.csproj.AssemblyReference.cache
+C:\Users\turka\source\repos\Kurumsal\AlbarakaTurk\NetCore\catalog\catalog.Business\obj\Debug\net6.0\catalog.Business.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\turka\source\repos\Kurumsal\AlbarakaTurk\NetCore\catalog\catalog.Business\obj\Debug\net6.0\catalog.Business.AssemblyInfoInputs.cache
+C:\Users\turka\source\repos\Kurumsal\AlbarakaTurk\NetCore\catalog\catalog.Business\obj\Debug\net6.0\catalog.Business.AssemblyInfo.cs
+C:\Users\turka\source\repos\Kurumsal\AlbarakaTurk\NetCore\catalog\catalog.Business\obj\Debug\net6.0\catalog.Business.csproj.CoreCompileInputs.cache
+C:\Users\turka\source\repos\Kurumsal\AlbarakaTurk\NetCore\catalog\catalog.Business\obj\Debug\net6.0\catalog.Business.csproj.CopyComplete
+C:\Users\turka\source\repos\Kurumsal\AlbarakaTurk\NetCore\catalog\catalog.Business\obj\Debug\net6.0\catalog.Business.dll
+C:\Users\turka\source\repos\Kurumsal\AlbarakaTurk\NetCore\catalog\catalog.Business\obj\Debug\net6.0\refint\catalog.Business.dll
+C:\Users\turka\source\repos\Kurumsal\AlbarakaTurk\NetCore\catalog\catalog.Business\obj\Debug\net6.0\catalog.Business.pdb
+C:\Users\turka\source\repos\Kurumsal\AlbarakaTurk\NetCore\catalog\catalog.Business\obj\Debug\net6.0\ref\catalog.Business.dll

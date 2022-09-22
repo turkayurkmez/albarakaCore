@@ -1,0 +1,15 @@
+C:\Users\turka\source\repos\Kurumsal\AlbarakaTurk\NetCore\catalog\catalog.DataAccess\bin\Debug\net6.0\catalog.DataAccess.deps.json
+C:\Users\turka\source\repos\Kurumsal\AlbarakaTurk\NetCore\catalog\catalog.DataAccess\bin\Debug\net6.0\catalog.DataAccess.dll
+C:\Users\turka\source\repos\Kurumsal\AlbarakaTurk\NetCore\catalog\catalog.DataAccess\bin\Debug\net6.0\catalog.DataAccess.pdb
+C:\Users\turka\source\repos\Kurumsal\AlbarakaTurk\NetCore\catalog\catalog.DataAccess\bin\Debug\net6.0\catalog.Entities.dll
+C:\Users\turka\source\repos\Kurumsal\AlbarakaTurk\NetCore\catalog\catalog.DataAccess\bin\Debug\net6.0\catalog.Entities.pdb
+C:\Users\turka\source\repos\Kurumsal\AlbarakaTurk\NetCore\catalog\catalog.DataAccess\obj\Debug\net6.0\catalog.DataAccess.csproj.AssemblyReference.cache
+C:\Users\turka\source\repos\Kurumsal\AlbarakaTurk\NetCore\catalog\catalog.DataAccess\obj\Debug\net6.0\catalog.DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\turka\source\repos\Kurumsal\AlbarakaTurk\NetCore\catalog\catalog.DataAccess\obj\Debug\net6.0\catalog.DataAccess.AssemblyInfoInputs.cache
+C:\Users\turka\source\repos\Kurumsal\AlbarakaTurk\NetCore\catalog\catalog.DataAccess\obj\Debug\net6.0\catalog.DataAccess.AssemblyInfo.cs
+C:\Users\turka\source\repos\Kurumsal\AlbarakaTurk\NetCore\catalog\catalog.DataAccess\obj\Debug\net6.0\catalog.DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\turka\source\repos\Kurumsal\AlbarakaTurk\NetCore\catalog\catalog.DataAccess\obj\Debug\net6.0\catalog.DataAccess.csproj.CopyComplete
+C:\Users\turka\source\repos\Kurumsal\AlbarakaTurk\NetCore\catalog\catalog.DataAccess\obj\Debug\net6.0\catalog.DataAccess.dll
+C:\Users\turka\source\repos\Kurumsal\AlbarakaTurk\NetCore\catalog\catalog.DataAccess\obj\Debug\net6.0\refint\catalog.DataAccess.dll
+C:\Users\turka\source\repos\Kurumsal\AlbarakaTurk\NetCore\catalog\catalog.DataAccess\obj\Debug\net6.0\catalog.DataAccess.pdb
+C:\Users\turka\source\repos\Kurumsal\AlbarakaTurk\NetCore\catalog\catalog.DataAccess\obj\Debug\net6.0\ref\catalog.DataAccess.dll
