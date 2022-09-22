@@ -10,4 +10,8 @@
     <ProjectReference Include="..\catalog.DataAccess\catalog.DataAccess.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="DTOs\Requests\" />
+  </ItemGroup>
+
 </Project>
