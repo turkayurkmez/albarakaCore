@@ -1,0 +1,47 @@
+services:
+  notification.api:
+    build:
+      context: C:\Users\turka\source\repos\Kurumsal\AlbarakaTurk\NetCore\EDA
+      dockerfile: Notification.API/Dockerfile
+    depends_on:
+      rabbitmq:
+        condition: service_started
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_URLS: https://+:443;http://+:80
+    image: notificationapi
+    ports:
+    - published: 8082
+      target: 80
+    - target: 80
+    - target: 443
+    volumes:
+    - C:\Users\turka\AppData\Roaming\ASP.NET\Https:/root/.aspnet/https:ro
+    - C:\Users\turka\AppData\Roaming\Microsoft\UserSecrets:/root/.microsoft/usersecrets:ro
+  order.api:
+    build:
+      context: C:\Users\turka\source\repos\Kurumsal\AlbarakaTurk\NetCore\EDA
+      dockerfile: Order.API/Dockerfile
+    depends_on:
+      rabbitmq:
+        condition: service_started
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_URLS: https://+:443;http://+:80
+    image: orderapi
+    ports:
+    - published: 8083
+      target: 80
+    - target: 80
+    - target: 443
+    volumes:
+    - C:\Users\turka\AppData\Roaming\ASP.NET\Https:/root/.aspnet/https:ro
+    - C:\Users\turka\AppData\Roaming\Microsoft\UserSecrets:/root/.microsoft/usersecrets:ro
+  rabbitmq:
+    image: rabbitmq:3.10-management
+    ports:
+    - published: 5682
+      target: 5672
+    - published: 15682
+      target: 15672
+version: '3.4'

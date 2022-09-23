@@ -1,0 +1,31 @@
+version: '3.4'
+
+services:
+
+  rabbitmq:
+    image: rabbitmq:3.10-management
+    ports:
+     - "5672:5672"
+     - "15672:15672"
+
+
+  notification.api:
+    image: ${DOCKER_REGISTRY-}notificationapi
+    build:
+      context: .
+      dockerfile: Notification.API/Dockerfile
+    ports:
+      - "8082:80"
+    depends_on:
+      - rabbitmq
+
+  order.api:
+    image: ${DOCKER_REGISTRY-}orderapi
+    build:
+      context: .
+      dockerfile: Order.API/Dockerfile
+    ports:
+      - "8083:80"
+    depends_on:
+      - rabbitmq
+
