@@ -29,8 +29,10 @@ namespace catalog.DataAccess.Data
 
 
 
-            modelBuilder.Entity<Category>().HasData(new Category { Id = 1, Name = "Elektronik" }, new Category { Id = 2, Name = "Giyim" });
-            modelBuilder.Entity<Product>().HasData(new Product { Id = 1, Name = "DELL XPS 15", Price = 100, StockCount = 100, CategoryId = 1 }, new Product { Id = 2, Name = "Kazak", Price = 100, StockCount = 100, CategoryId = 2 });
+            modelBuilder.Entity<Category>().HasData(new Category { Id = 1, Name = "Elektronik" },
+                                                    new Category { Id = 2, Name = "Giyim" });
+            modelBuilder.Entity<Product>().HasData(new Product { Id = 1, Name = "DELL XPS 15", Price = 100, StockCount = 100, CategoryId = 1 },
+                                                   new Product { Id = 2, Name = "Kazak", Price = 100, StockCount = 100, CategoryId = 2 });
 
             base.OnModelCreating(modelBuilder);
         }

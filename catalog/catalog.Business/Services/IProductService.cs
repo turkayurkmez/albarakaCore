@@ -12,5 +12,7 @@ namespace catalog.Business.Services
         Task<int> UpdateProduct(UpdateProductRequest updateProductRequest);
         Task Delete(int id);
 
+        Task<bool> IsEntityExists(int id);
+
     }
 }

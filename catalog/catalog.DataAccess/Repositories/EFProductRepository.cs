@@ -21,9 +21,12 @@ namespace catalog.DataAccess.Repositories
             await catalogDbContext.SaveChangesAsync();
         }
 
-        public Task Delete(int id)
+        public async Task Delete(int id)
         {
-            throw new NotImplementedException();
+            var product = await GetById(id);
+            catalogDbContext.Products.Remove(product);
+            await catalogDbContext.SaveChangesAsync();
+
         }
 
         public async Task<IEnumerable<Product>> GetAll()
@@ -44,14 +47,22 @@ namespace catalog.DataAccess.Repositories
             return products;
         }
 
+        public async Task<bool> IsEntityExists(int id)
+        {
+            return await catalogDbContext.Products.AnyAsync(x => x.Id == id);
+        }
+
         public Task<IEnumerable<Product>> SearchProductsByName(string name)
         {
             throw new NotImplementedException();
         }
 
-        public Task Update(Product entity)
+        public async Task Update(Product entity)
         {
-            throw new NotImplementedException();
+            catalogDbContext.Products.Update(entity);
+            await catalogDbContext.SaveChangesAsync();
+
+
         }
     }
 }

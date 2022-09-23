@@ -68,6 +68,11 @@ namespace catalog.Business.Services
             return dto;
         }
 
+        public async Task<bool> IsEntityExists(int id)
+        {
+            return await productRepository.IsEntityExists(id);
+        }
+
         public async Task<int> UpdateProduct(UpdateProductRequest updateProductRequest)
         {
             var product = new Product

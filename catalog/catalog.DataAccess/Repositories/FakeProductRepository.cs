@@ -36,6 +36,11 @@ namespace catalog.DataAccess.Repositories
             throw new NotImplementedException();
         }
 
+        public Task<bool> IsEntityExists(int id)
+        {
+            throw new NotImplementedException();
+        }
+
         public Task<IEnumerable<Product>> SearchProductsByName(string name)
         {
             throw new NotImplementedException();

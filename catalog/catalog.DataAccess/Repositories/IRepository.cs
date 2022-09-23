@@ -11,7 +11,7 @@ namespace catalog.DataAccess.Repositories
         Task Update(T entity);
         Task Delete(int id);
 
-
+        Task<bool> IsEntityExists(int id);
 
 
 

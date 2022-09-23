@@ -1,4 +1,4 @@
-﻿
+﻿using catalog.API.Filters;
 using catalog.Business.DTOs.Requests;
 using catalog.Business.Services;
 using Microsoft.AspNetCore.Mvc;
@@ -51,6 +51,37 @@ namespace catalog.API.Controllers
 
             }
             return BadRequest(ModelState);
+        }
+        [HttpPut("{id}")]
+        [IsExists]
+        public async Task<IActionResult> Update(int id, UpdateProductRequest updateProduct)
+        {
+            //1. id'li ürün var mı?
+            //if (await productService.IsEntityExists(id))
+            //{
+            if (ModelState.IsValid)
+            {
+                await productService.UpdateProduct(updateProduct);
+
+                return Ok(updateProduct);
+
+            }
+            //ModelState.AddModelError("x", "Haftasonu EFT olmaz");
+            return BadRequest(ModelState);
+            //}
+
+            //return NotFound();
+        }
+        [HttpDelete("{id}")]
+        [IsExists]
+        public async Task<IActionResult> Delete(int id)
+        {
+            //if (await productService.IsEntityExists(id))
+            //{
+            await productService.Delete(id);
+            return Ok();
+            //}
+            // return NotFound();
         }
     }
 }
