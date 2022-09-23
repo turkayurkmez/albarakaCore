@@ -1,6 +1,7 @@
 ﻿using catalog.API.Filters;
 using catalog.Business.DTOs.Requests;
 using catalog.Business.Services;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace catalog.API.Controllers
@@ -42,6 +43,7 @@ namespace catalog.API.Controllers
 
         }
         [HttpPost]
+        [Authorize(Roles = "Admin,Editor")]
         public async Task<IActionResult> Add(CreateProductRequest createProduct)
         {
             if (ModelState.IsValid)

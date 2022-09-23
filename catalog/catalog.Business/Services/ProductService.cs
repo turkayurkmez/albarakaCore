@@ -1,4 +1,5 @@
-﻿using catalog.Business.DTOs.Requests;
+﻿using AutoMapper;
+using catalog.Business.DTOs.Requests;
 using catalog.Business.DTOs.Responses;
 using catalog.DataAccess.Repositories;
 using catalog.Entities;
@@ -9,22 +10,26 @@ namespace catalog.Business.Services
     {
 
         private readonly IProductRepository productRepository;
+        private readonly IMapper mapper;
 
-        public ProductService(IProductRepository productRepository)
+        public ProductService(IProductRepository productRepository, IMapper mapper)
         {
             this.productRepository = productRepository;
+            this.mapper = mapper;
         }
 
         public async Task<int> AddProduct(CreateProductRequest createProductRequest)
         {
-            var product = new Product
-            {
-                Name = createProductRequest.Name,
-                Price = createProductRequest.Price,
-                Description = createProductRequest.Description,
-                Rating = createProductRequest.Rating,
-                CategoryId = createProductRequest.CategoryId,
-            };
+            //var product = new Product
+            //{
+            //    Name = createProductRequest.Name,
+            //    Price = createProductRequest.Price,
+            //    Description = createProductRequest.Description,
+            //    Rating = createProductRequest.Rating,
+            //    CategoryId = createProductRequest.CategoryId,
+            //};
+
+            var product = mapper.Map<Product>(createProductRequest);
 
             await productRepository.Add(product);
             return product.Id;
@@ -40,14 +45,16 @@ namespace catalog.Business.Services
         public async Task<ProductDisplayResponse> GetProduct(int id)
         {
             var product = await productRepository.GetById(id);
-            return new ProductDisplayResponse
-            {
-                Description = product.Description,
-                Id = product.Id,
-                Name = product.Name,
-                Price = product.Price,
-                Rating = product.Rating
-            };
+            var response = mapper.Map<ProductDisplayResponse>(product);
+            return response;
+            //return new ProductDisplayResponse
+            //{
+            //    Description = product.Description,
+            //    Id = product.Id,
+            //    Name = product.Name,
+            //    Price = product.Price,
+            //    Rating = product.Rating
+            //};
         }
 
         public async Task<IEnumerable<ProductDisplayResponse>> GetProducts()
@@ -56,14 +63,15 @@ namespace catalog.Business.Services
             //Bir repository aracılığı ile veri kaynağından çek....
 
             var products = await productRepository.GetAll();
-            var dto = products.Select(p => new ProductDisplayResponse
-            {
-                Description = p.Description,
-                Id = p.Id,
-                Name = p.Name,
-                Price = p.Price,
-                Rating = p.Rating
-            });
+            var dto = mapper.Map<IEnumerable<ProductDisplayResponse>>(products);
+            //var dto = products.Select(p => new ProductDisplayResponse
+            //{
+            //    Description = p.Description,
+            //    Id = p.Id,
+            //    Name = p.Name,
+            //    Price = p.Price,
+            //    Rating = p.Rating
+            //});
 
             return dto;
         }
@@ -75,15 +83,17 @@ namespace catalog.Business.Services
 
         public async Task<int> UpdateProduct(UpdateProductRequest updateProductRequest)
         {
-            var product = new Product
-            {
-                CategoryId = updateProductRequest.CategoryId,
-                Description = updateProductRequest.Description,
-                Id = updateProductRequest.Id,
-                Name = updateProductRequest.Name,
-                Price = updateProductRequest.Price,
-                Rating = updateProductRequest.Rating
-            };
+            //var product = new Product
+            //{
+            //    CategoryId = updateProductRequest.CategoryId,
+            //    Description = updateProductRequest.Description,
+            //    Id = updateProductRequest.Id,
+            //    Name = updateProductRequest.Name,
+            //    Price = updateProductRequest.Price,
+            //    Rating = updateProductRequest.Rating
+            //};
+
+            var product = mapper.Map<Product>(updateProductRequest);
 
             await productRepository.Update(product);
             return product.Id;
