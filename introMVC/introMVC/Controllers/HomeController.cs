@@ -15,6 +15,7 @@ namespace introMVC.Controllers
 
         public IActionResult Index()
         {
+            string test = "";
             var products = new List<Product>()
             {
                 new Product{ Id=1, Name="A", Price=1, Description="Bilmemne"},
